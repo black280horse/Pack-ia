@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Mega Pack de IA</title>
 
   <!-- Componentes de Shopify Web Components -->
@@ -117,18 +117,7 @@
   language="es"
 >
 
-  <!-- BOTÓN DE CARRITO FLOTANTE -->
-  <button 
-    onclick="document.getElementById('cart').showModal()"
-    style="position:fixed;bottom:20px;right:20px;z-index:1000;background:#E8A020;color:white;border:none;border-radius:50%;width:60px;height:60px;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center;transition:transform 0.3s;"
-    onmouseover="this.style.transform='scale(1.1)'"
-    onmouseout="this.style.transform='scale(1)'"
-  >
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
-      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-    </svg>
-  </button>
+
 
 
   <!-- SECCIÓN 1: HERO -->
@@ -146,7 +135,7 @@
         <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:40px;font-weight:900;text-transform:uppercase;font-style:italic;color:#E8A020;line-height:.93;">y vendés más con IA</span>
       </div>
 
-      <p style="font-size:20px;font-weight:300;color:#D1D5DB;margin-bottom:26px;line-height:1.65;">
+      <p style="font-size:20px;font-weight:300;color:#F1F5F9;margin-bottom:26px;line-height:1.65;">
         Sin grabarte · Sin programar · Sin estar pegado al celular todo el día
       </p>
 
@@ -158,7 +147,7 @@
         <span style="font-size:20px;flex-shrink:0;margin-top:2px;">🎯</span>
         <div>
           <b style="display:block;font-size:18px;font-weight:600;color:#F1F5F9;margin-bottom:6px;">Una sola inversión. Todo lo que necesitás.</b>
-          <span style="font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.65;">Chatbots, videos con IA, imágenes, automatizaciones, copy, landing pages y más — en lenguaje humano y aplicado a tu negocio.</span>
+          <span style="font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.65;">Chatbots, videos con IA, imágenes, automatizaciones, copy, landing pages y más — en lenguaje humano y aplicado a tu negocio.</span>
         </div>
       </div>
 
@@ -170,7 +159,7 @@
           </div>
           <div style="display:table-cell;vertical-align:middle;padding:14px 18px;text-align:left;">
             <span style="display:block;font-size:15px;font-weight:600;color:#F1F5F9;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Cursos completos</span>
-            <span style="display:block;font-size:14px;color:#D1D5DB;line-height:1.4;">De cero a aplicación real en tu negocio</span>
+            <span style="display:block;font-size:14px;color:#F1F5F9;line-height:1.4;">De cero a aplicación real en tu negocio</span>
           </div>
         </div>
       </div>
@@ -183,7 +172,7 @@
           </div>
           <div style="display:table-cell;vertical-align:middle;padding:14px 18px;text-align:left;">
             <span style="display:block;font-size:15px;font-weight:600;color:#F1F5F9;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Bonos de regalo</span>
-            <span style="display:block;font-size:14px;color:#D1D5DB;line-height:1.4;">Incluidos sin costo adicional</span>
+            <span style="display:block;font-size:14px;color:#F1F5F9;line-height:1.4;">Incluidos sin costo adicional</span>
           </div>
         </div>
       </div>
@@ -198,7 +187,7 @@
           </div>
           <div style="display:table-cell;vertical-align:middle;padding:14px 18px;text-align:left;">
             <span style="display:block;font-size:15px;font-weight:600;color:#F1F5F9;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Acceso de por vida</span>
-            <span style="display:block;font-size:14px;color:#D1D5DB;line-height:1.4;">Un solo pago, sin suscripciones</span>
+            <span style="display:block;font-size:14px;color:#F1F5F9;line-height:1.4;">Un solo pago, sin suscripciones</span>
           </div>
         </div>
       </div>
@@ -207,7 +196,7 @@
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="var c=document.getElementById('cart'); c.addLine(event); c.showModal();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
         </template>
@@ -218,21 +207,21 @@
         </div>
       </shopify-context>
 
-      <span style="display:block;font-size:17px;font-weight:400;color:#EAEAEA;text-align:center;line-height:1.6;margin-bottom:26px;">
+      <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;margin-bottom:26px;">
         🔒 Pago seguro · Acceso inmediato · 100% online
       </span>
 
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);">
-        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#D1D5DB;">
+        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#F1F5F9;">
           <span style="width:5px;height:5px;border-radius:50%;background:#E8A020;opacity:.7;display:inline-block;flex-shrink:0;"></span>7 días para ver resultados
         </span>
-        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#D1D5DB;">
+        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#F1F5F9;">
           <span style="width:5px;height:5px;border-radius:50%;background:#E8A020;opacity:.7;display:inline-block;flex-shrink:0;"></span>Sin programar
         </span>
-        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#D1D5DB;">
+        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#F1F5F9;">
           <span style="width:5px;height:5px;border-radius:50%;background:#E8A020;opacity:.7;display:inline-block;flex-shrink:0;"></span>Sin grabarte
         </span>
-        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#D1D5DB;">
+        <span style="display:flex;align-items:center;gap:6px;font-size:14px;color:#F1F5F9;">
           <span style="width:5px;height:5px;border-radius:50%;background:#E8A020;opacity:.7;display:inline-block;flex-shrink:0;"></span>100% en español
         </span>
       </div>
@@ -257,7 +246,7 @@
         <span style="font-size:22px;flex-shrink:0;margin-top:1px;line-height:1;">😵💫</span>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:6px;line-height:1.3;">No sabés por dónde empezar</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.52);line-height:1.65;">Hay demasiadas herramientas, demasiado contenido y ninguna hoja de ruta. Ves algo nuevo cada semana y no sabés qué realmente importa.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Hay demasiadas herramientas, demasiado contenido y ninguna hoja de ruta. Ves algo nuevo cada semana y no sabés qué realmente importa.</span>
         </div>
       </div>
 
@@ -265,7 +254,7 @@
         <span style="font-size:22px;flex-shrink:0;margin-top:1px;line-height:1;">📚</span>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:6px;line-height:1.3;">Compraste cursos que no funcionaron</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.52);line-height:1.65;">Mucha teoría, poca práctica. Te enseñaron qué es la IA pero nadie te explicó cómo usarla en tu negocio, tu trabajo o tu día a día.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Mucha teoría, poca práctica. Te enseñaron qué es la IA pero nadie te explicó cómo usarla en tu negocio, tu trabajo o tu día a día.</span>
         </div>
       </div>
 
@@ -273,7 +262,7 @@
         <span style="font-size:22px;flex-shrink:0;margin-top:1px;line-height:1;">⏳</span>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:6px;line-height:1.3;">Sentís que el tiempo se te va</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.52);line-height:1.65;">Ves a otros avanzar, automatizar y crecer. Vos seguís mirando tutoriales de YouTube sin convertir nada en resultados concretos.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Ves a otros avanzar, automatizar y crecer. Vos seguís mirando tutoriales de YouTube sin convertir nada en resultados concretos.</span>
         </div>
       </div>
 
@@ -281,7 +270,7 @@
         <span style="font-size:22px;flex-shrink:0;margin-top:1px;line-height:1;">🧩</span>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:6px;line-height:1.3;">Aprendés herramientas sueltas, sin conexión</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.52);line-height:1.65;">ChatGPT por acá, Canva IA por allá, automatización por otro lado. Todo fragmentado. Sin orden, sin sistema, sin aplicación real.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">ChatGPT por acá, Canva IA por allá, automatización por otro lado. Todo fragmentado. Sin orden, sin sistema, sin aplicación real.</span>
         </div>
       </div>
 
@@ -289,7 +278,7 @@
         <span style="font-size:22px;flex-shrink:0;margin-top:1px;line-height:1;">🎥</span>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:6px;line-height:1.3;">Querés crear contenido sin grabarte ni mostrar tu cara</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.52);line-height:1.65;">Sabés que el contenido vende pero no querés aparecer. Con IA se puede — solo que nadie te explicó cómo hacerlo bien.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Sabés que el contenido vende pero no querés aparecer. Con IA se puede — solo que nadie te explicó cómo hacerlo bien.</span>
         </div>
       </div>
 
@@ -297,7 +286,7 @@
         <span style="font-size:22px;flex-shrink:0;margin-top:1px;line-height:1;">📱</span>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:6px;line-height:1.3;">Estás cansado de estar pegado al celular para vender</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.52);line-height:1.65;">Respondés consultas todo el día, creás contenido a mano, cerrás ventas uno a uno. La IA puede hacer todo eso por vos — pero primero hay que saber usarla.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Respondés consultas todo el día, creás contenido a mano, cerrás ventas uno a uno. La IA puede hacer todo eso por vos — pero primero hay que saber usarla.</span>
         </div>
       </div>
 
@@ -305,7 +294,7 @@
         <span style="font-size:22px;flex-shrink:0;margin-top:1px;line-height:1;">🫠</span>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:6px;line-height:1.3;">Empezás a pensar que el problema sos vos</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.52);line-height:1.65;">Pero no lo es. El sistema de educación de IA está roto. Está diseñado para impresionar, no para enseñarte a implementar.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Pero no lo es. El sistema de educación de IA está roto. Está diseñado para impresionar, no para enseñarte a implementar.</span>
         </div>
       </div>
 
@@ -318,15 +307,15 @@
 
       <div style="background:#0D0D11;border:1px solid rgba(255,255,255,.05);border-radius:11px;padding:15px 17px;margin-bottom:8px;display:flex;align-items:flex-start;gap:10px;text-align:left;">
         <span style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:900;color:rgba(210,70,70,.28);line-height:1;flex-shrink:0;margin-top:-3px;">"</span>
-        <span style="font-size:16px;font-style:italic;color:rgba(240,237,230,.52);line-height:1.6;">Ya compré cursos y sigo igual. No sé si el problema es el sistema o soy yo.</span>
+        <span style="font-size:16px;font-style:italic;color:rgba(240,237,230,.85);line-height:1.6;">Ya compré cursos y sigo igual. No sé si el problema es el sistema o soy yo.</span>
       </div>
       <div style="background:#0D0D11;border:1px solid rgba(255,255,255,.05);border-radius:11px;padding:15px 17px;margin-bottom:8px;display:flex;align-items:flex-start;gap:10px;text-align:left;">
         <span style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:900;color:rgba(210,70,70,.28);line-height:1;flex-shrink:0;margin-top:-3px;">"</span>
-        <span style="font-size:16px;font-style:italic;color:rgba(240,237,230,.52);line-height:1.6;">Quiero vender más sin estar pegado al celular respondiendo todo el día.</span>
+        <span style="font-size:16px;font-style:italic;color:rgba(240,237,230,.85);line-height:1.6;">Quiero vender más sin estar pegado al celular respondiendo todo el día.</span>
       </div>
       <div style="background:#0D0D11;border:1px solid rgba(255,255,255,.05);border-radius:11px;padding:15px 17px;margin-bottom:30px;display:flex;align-items:flex-start;gap:10px;text-align:left;">
         <span style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:900;color:rgba(210,70,70,.28);line-height:1;flex-shrink:0;margin-top:-3px;">"</span>
-        <span style="font-size:16px;font-style:italic;color:rgba(240,237,230,.52);line-height:1.6;">No quiero más teoría. Necesito un método concreto que baje a tierra.</span>
+        <span style="font-size:16px;font-style:italic;color:rgba(240,237,230,.85);line-height:1.6;">No quiero más teoría. Necesito un método concreto que baje a tierra.</span>
       </div>
 
       <div style="background:rgba(232,160,32,.05);border:1px solid rgba(232,160,32,.18);border-radius:14px;padding:24px 22px;text-align:center;">
@@ -357,7 +346,7 @@
         <div style="width:46px;height:46px;min-width:46px;border-radius:12px;background:rgba(232,160,32,.12);border:1px solid rgba(232,160,32,.22);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;">✅</div>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:7px;line-height:1.3;">Un sistema con orden, no herramientas sueltas</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.55);line-height:1.65;">Sabés qué usar, cuándo usarlo y para qué. Sin improvisar, sin perderte.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Sabés qué usar, cuándo usarlo y para qué. Sin improvisar, sin perderte.</span>
         </div>
       </div>
 
@@ -365,7 +354,7 @@
         <div style="width:46px;height:46px;min-width:46px;border-radius:12px;background:rgba(232,160,32,.12);border:1px solid rgba(232,160,32,.22);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;">🧠</div>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:7px;line-height:1.3;">Todo explicado en lenguaje humano</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.55);line-height:1.65;">Sin tecnicismos. Si nunca usaste IA, empezás desde cero y avanzás sin sentirte perdido.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Sin tecnicismos. Si nunca usaste IA, empezás desde cero y avanzás sin sentirte perdido.</span>
         </div>
       </div>
 
@@ -373,7 +362,7 @@
         <div style="width:46px;height:46px;min-width:46px;border-radius:12px;background:rgba(232,160,32,.12);border:1px solid rgba(232,160,32,.22);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;">💼</div>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:7px;line-height:1.3;">Aplicado a tu negocio, no a casos genéricos</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.55);line-height:1.65;">Ejemplos reales para emprendedores. Resultados concretos, sin rodeos.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Ejemplos reales para emprendedores. Resultados concretos, sin rodeos.</span>
         </div>
       </div>
 
@@ -381,7 +370,7 @@
         <div style="width:46px;height:46px;min-width:46px;border-radius:12px;background:rgba(232,160,32,.12);border:1px solid rgba(232,160,32,.22);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;">⚡</div>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:7px;line-height:1.3;">Ahorrás tiempo desde el primer módulo</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.55);line-height:1.65;">Cada clase te da algo que podés implementar el mismo día que la viste.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Cada clase te da algo que podés implementar el mismo día que la viste.</span>
         </div>
       </div>
 
@@ -389,7 +378,7 @@
         <div style="width:46px;height:46px;min-width:46px;border-radius:12px;background:rgba(232,160,32,.12);border:1px solid rgba(232,160,32,.22);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;">🚫</div>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:7px;line-height:1.3;">Sin programar, sin conocimientos técnicos</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.55);line-height:1.65;">Vos podés usar la IA tal como sos hoy. No necesitás nada especial para empezar.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Vos podés usar la IA tal como sos hoy. No necesitás nada especial para empezar.</span>
         </div>
       </div>
 
@@ -397,7 +386,7 @@
         <div style="width:46px;height:46px;min-width:46px;border-radius:12px;background:rgba(232,160,32,.12);border:1px solid rgba(232,160,32,.22);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;">🔓</div>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:7px;line-height:1.3;">Acceso de por vida</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.55);line-height:1.65;">Un solo pago y el contenido es tuyo para siempre. A tu ritmo, sin fechas de vencimiento.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Un solo pago y el contenido es tuyo para siempre. A tu ritmo, sin fechas de vencimiento.</span>
         </div>
       </div>
 
@@ -405,7 +394,7 @@
         <div style="width:46px;height:46px;min-width:46px;border-radius:12px;background:rgba(232,160,32,.12);border:1px solid rgba(232,160,32,.22);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;">📥</div>
         <div>
           <span style="display:block;font-size:18px;font-weight:600;color:#F0EDE6;margin-bottom:7px;line-height:1.3;">Contenido descargable incluido</span>
-          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.55);line-height:1.65;">Plantillas, prompts, guías y recursos listos para usar. Los descargás y los aplicás de inmediato.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.65;">Plantillas, prompts, guías y recursos listos para usar. Los descargás y los aplicás de inmediato.</span>
         </div>
       </div>
 
@@ -419,14 +408,14 @@
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">🎬</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Videos e imágenes sin límites</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Con Veo 3 Premium sin pagar suscripción</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Con Veo 3 Premium sin pagar suscripción</span>
               </div>
             </td>
             <td width="50%" style="padding:0 0 0 6px;vertical-align:top;">
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">🤖</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Chatbots que venden 24/7</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Responden, califican y cierran solos</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Responden, califican y cierran solos</span>
               </div>
             </td>
           </tr>
@@ -438,14 +427,14 @@
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">⚙️</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Automatizaciones con n8n</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Tu negocio funcionando solo 24/7</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Tu negocio funcionando solo 24/7</span>
               </div>
             </td>
             <td width="50%" style="padding:0 0 0 6px;vertical-align:top;">
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">✍️</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Anuncios que convierten</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Copy e imágenes virales con IA</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Copy e imágenes virales con IA</span>
               </div>
             </td>
           </tr>
@@ -457,14 +446,14 @@
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">🧬</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Tu avatar o influencer IA</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Monetizalo en dólares sin mostrar tu cara</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Monetizalo en dólares sin mostrar tu cara</span>
               </div>
             </td>
             <td width="50%" style="padding:0 0 0 6px;vertical-align:top;">
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">📱</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Apps sin código en 7 días</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Sistemas y herramientas para tu negocio</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Sistemas y herramientas para tu negocio</span>
               </div>
             </td>
           </tr>
@@ -476,14 +465,14 @@
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">💰</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Ventas con ChatGPT</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Tu asistente de ventas disponible 24hs</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Tu asistente de ventas disponible 24hs</span>
               </div>
             </td>
             <td width="50%" style="padding:0 0 0 6px;vertical-align:top;">
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">🚀</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Embudos con IA</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Captación, seguimiento y cierre automático</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Captación, seguimiento y cierre automático</span>
               </div>
             </td>
           </tr>
@@ -495,14 +484,14 @@
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">🔓</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Herramientas premium gratis</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">El método para usarlas sin pagar suscripción</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">El método para usarlas sin pagar suscripción</span>
               </div>
             </td>
             <td width="50%" style="padding:0 0 0 6px;vertical-align:top;">
               <div style="background:#131318;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;">
                 <span style="display:block;font-size:28px;margin-bottom:9px;line-height:1;">💪</span>
                 <span style="display:block;font-size:14px;font-weight:600;color:#F0EDE6;line-height:1.4;margin-bottom:5px;">Confianza real en IA</span>
-                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.48);line-height:1.5;">Pasás de no saber nada a aplicarla en días</span>
+                <span style="display:block;font-size:12.5px;font-weight:300;color:rgba(240,237,230,.85);line-height:1.5;">Pasás de no saber nada a aplicarla en días</span>
               </div>
             </td>
           </tr>
@@ -520,7 +509,7 @@
       <span style="display:block;font-size:14px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(232,160,32,.72);margin-bottom:14px;">Todo lo que recibís hoy</span>
       <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:40px;font-weight:900;text-transform:uppercase;color:#F1F5F9;line-height:.93;">El Mega Pack de IA</span>
       <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:40px;font-weight:900;text-transform:uppercase;font-style:italic;color:#E8A020;line-height:.93;margin-bottom:16px;">8 cursos + 10 regalos</span>
-      <p style="font-size:17px;font-weight:300;line-height:1.80;color:#EAEAEA;margin-bottom:32px;">Todo junto, en un solo pago, con acceso inmediato.</p>
+      <p style="font-size:17px;font-weight:300;line-height:1.80;color:#FFFFFF;margin-bottom:32px;">Todo junto, en un solo pago, con acceso inmediato.</p>
 
       <div class="sq" style="border-radius:16px;margin-bottom:36px;border:1px solid rgba(232,160,32,.22);">
         <img src="https://i.imgur.com/aurZVPL.png" alt="Mega Pack de IA">
@@ -539,10 +528,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">🥇 Golden IA – Midas</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $37</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $37</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Aprendé a crear tu propia influencer virtual con IA para tu marca o negocio. Generá contenido profesional, atraé clientes y vendé sin mostrar tu rostro, usando videos e imágenes creados desde cero con inteligencia artificial.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Aprendé a crear tu propia influencer virtual con IA para tu marca o negocio. Generá contenido profesional, atraé clientes y vendé sin mostrar tu rostro, usando videos e imágenes creados desde cero con inteligencia artificial.</span>
         </div>
       </div>
 
@@ -556,10 +545,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">💰 Vende Más con IA</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $37</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $37</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Usá ChatGPT como tu asistente de ventas para crear anuncios, guiones, emails, secuencias de WhatsApp y contenido que convierta más clientes.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Usá ChatGPT como tu asistente de ventas para crear anuncios, guiones, emails, secuencias de WhatsApp y contenido que convierta más clientes.</span>
         </div>
       </div>
 
@@ -573,10 +562,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">🎬 Anuncios Virales con IA</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $27</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $27</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Aprendé a crear anuncios cinematográficos y virales con IA para Meta Ads, TikTok y redes sociales. Diseñá guiones, imágenes y videos que aumenten el CTR y las conversiones.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Aprendé a crear anuncios cinematográficos y virales con IA para Meta Ads, TikTok y redes sociales. Diseñá guiones, imágenes y videos que aumenten el CTR y las conversiones.</span>
         </div>
       </div>
 
@@ -590,10 +579,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">🚀 N8N Viral Machine</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $47</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $47</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Creá máquinas de contenido viral automáticas que publiquen 24/7 en redes sociales y generen tráfico y ventas de forma automática.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Creá máquinas de contenido viral automáticas que publiquen 24/7 en redes sociales y generen tráfico y ventas de forma automática.</span>
         </div>
       </div>
 
@@ -607,10 +596,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">⚙️ Protocolo IA</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $37</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $37</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Diseñá un embudo de ventas completo con IA: captación, seguimiento, cierre y postventa. Automatizá tu proceso comercial en pocos días.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Diseñá un embudo de ventas completo con IA: captación, seguimiento, cierre y postventa. Automatizá tu proceso comercial en pocos días.</span>
         </div>
       </div>
 
@@ -624,10 +613,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">🎨 IA Box Pack – Laura Blago</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $27</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $27</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Creá imágenes, videos y páginas web profesionales en minutos usando IA. Ideal para vender servicios, productos o crear contenido visual impactante sin saber diseño ni programación.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Creá imágenes, videos y páginas web profesionales en minutos usando IA. Ideal para vender servicios, productos o crear contenido visual impactante sin saber diseño ni programación.</span>
         </div>
       </div>
 
@@ -641,10 +630,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">🤖 IA Master Fast</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $47</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $47</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Automatizá tu negocio con IA y respuestas automáticas por WhatsApp 24/7. Atendé clientes, respondé consultas y cerrá ventas sin necesidad de contratar equipo.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Automatizá tu negocio con IA y respuestas automáticas por WhatsApp 24/7. Atendé clientes, respondé consultas y cerrá ventas sin necesidad de contratar equipo.</span>
         </div>
       </div>
 
@@ -658,10 +647,10 @@
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:20px;font-weight:600;color:#F1F5F9;margin-bottom:8px;line-height:1.2;">📱 App con IA en 7 días</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $37</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $37</span>
             </td>
           </tr></table>
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.7;">Aprendé a crear apps para tu negocio sin programar, utilizando IA y herramientas no-code. Ideal para emprendedores que quieren escalar rápido.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.7;">Aprendé a crear apps para tu negocio sin programar, utilizando IA y herramientas no-code. Ideal para emprendedores que quieren escalar rápido.</span>
         </div>
       </div>
 
@@ -681,10 +670,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 1</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Curso de Excel para emprendedores</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">Organizá y analizá tu negocio sin complicaciones.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">Organizá y analizá tu negocio sin complicaciones.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $17</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $17</span>
             </td>
           </tr></table>
         </div>
@@ -698,10 +687,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 2</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Ganar USD 2.000/mes con Influencer IA</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">Cómo crear y monetizar un influencer IA en dólares desde Argentina.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">Cómo crear y monetizar un influencer IA en dólares desde Argentina.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $27</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $27</span>
             </td>
           </tr></table>
         </div>
@@ -715,10 +704,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 3</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Curso de TikTok Virales</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">Las claves para videos que explotan en TikTok y generan ventas orgánicas.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">Las claves para videos que explotan en TikTok y generan ventas orgánicas.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $17</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $17</span>
             </td>
           </tr></table>
         </div>
@@ -732,10 +721,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 4</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">1.100 plantillas en Canva para anuncios</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">Diseños listos para editar, publicar y vender hoy mismo.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">Diseños listos para editar, publicar y vender hoy mismo.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $27</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $27</span>
             </td>
           </tr></table>
         </div>
@@ -749,10 +738,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 5</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Hack para herramientas de IA GRATIS</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">El método para acceder a herramientas premium de IA sin pagar suscripciones.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">El método para acceder a herramientas premium de IA sin pagar suscripciones.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $27</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $27</span>
             </td>
           </tr></table>
         </div>
@@ -766,10 +755,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 6</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">50 Hooks listos para vender</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">50 aperturas irresistibles para videos, anuncios y posts. Copiás, adaptás y publicás.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">50 aperturas irresistibles para videos, anuncios y posts. Copiás, adaptás y publicás.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $17</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $17</span>
             </td>
           </tr></table>
         </div>
@@ -783,10 +772,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 7</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Prompts maestro para Flow</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">Los mejores prompts para sacarle el máximo a Google Flow y generar contenido profesional.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">Los mejores prompts para sacarle el máximo a Google Flow y generar contenido profesional.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $17</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $17</span>
             </td>
           </tr></table>
         </div>
@@ -800,10 +789,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 8</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Mensajes de cierre por WhatsApp e Instagram</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">Scripts probados para cerrar ventas por mensajes. Copiás, enviás y cobrás.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">Scripts probados para cerrar ventas por mensajes. Copiás, enviás y cobrás.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $27</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $27</span>
             </td>
           </tr></table>
         </div>
@@ -817,10 +806,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 9</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Cómo monetizar la IA hoy</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">Las formas más directas de generar ingresos con IA hoy mismo. Modelos reales y aplicables.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">Las formas más directas de generar ingresos con IA hoy mismo. Modelos reales y aplicables.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $17</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $17</span>
             </td>
           </tr></table>
         </div>
@@ -834,10 +823,10 @@
             <td style="vertical-align:top;">
               <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0A0A0A;background:#E8A020;border-radius:999px;padding:4px 14px;margin-bottom:10px;">Regalo 10</span>
               <span style="display:block;font-family:'Barlow',sans-serif;font-size:19px;font-weight:600;color:#F1F5F9;margin-bottom:6px;line-height:1.2;">Prompt para crear personajes animados</span>
-              <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.65;">El prompt exacto para generar personajes animados únicos con IA en segundos.</span>
+              <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.65;">El prompt exacto para generar personajes animados únicos con IA en segundos.</span>
             </td>
             <td style="vertical-align:top;text-align:right;padding-left:14px;white-space:nowrap;">
-              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $10</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $10</span>
             </td>
           </tr></table>
         </div>
@@ -853,14 +842,14 @@
         <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px;">
           <span style="width:9px;height:9px;border-radius:50%;background:#4CAF50;display:inline-block;flex-shrink:0;animation:mpulse 1.2s ease-in-out infinite;"></span>
           <span style="font-family:Barlow Condensed,sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#4CAF50;">Comprando ahora mismo</span>
-          <span style="margin-left:auto;font-size:12px;color:#D1D5DB;">En vivo</span>
+          <span style="margin-left:auto;font-size:12px;color:#F1F5F9;">En vivo</span>
         </div>
 
         <div id="s4-n1" class="s4-notif-card" style="display:flex;align-items:center;gap:12px;background:#111116;border:1px solid rgba(76,175,80,.18);border-radius:11px;padding:13px 14px;margin-bottom:7px;text-align:left;transition:opacity .3s,transform .3s;">
           <span style="font-size:20px;flex-shrink:0;">🛒</span>
           <div style="flex:1;">
             <span id="s4-n1-txt" style="display:block;font-size:15px;font-weight:600;color:#F1F5F9;line-height:1.3;margin-bottom:2px;">Alguien de Buenos Aires compró hace 2 min</span>
-            <span style="display:block;font-size:12px;color:#D1D5DB;">✓ Verificado por Shopify</span>
+            <span style="display:block;font-size:12px;color:#F1F5F9;">✓ Verificado por Shopify</span>
           </div>
           <span style="flex-shrink:0;width:8px;height:8px;border-radius:50%;background:#4CAF50;display:inline-block;"></span>
         </div>
@@ -869,7 +858,7 @@
           <span style="font-size:20px;flex-shrink:0;">🔥</span>
           <div style="flex:1;">
             <span id="s4-n2-txt" style="display:block;font-size:15px;font-weight:600;color:#F1F5F9;line-height:1.3;margin-bottom:2px;">Alguien de Córdoba compró hace 5 min</span>
-            <span style="display:block;font-size:12px;color:#D1D5DB;">✓ Verificado por Shopify</span>
+            <span style="display:block;font-size:12px;color:#F1F5F9;">✓ Verificado por Shopify</span>
           </div>
           <span style="flex-shrink:0;width:8px;height:8px;border-radius:50%;background:#4CAF50;display:inline-block;"></span>
         </div>
@@ -878,7 +867,7 @@
           <span style="font-size:20px;flex-shrink:0;">⚡</span>
           <div style="flex:1;">
             <span id="s4-n3-txt" style="display:block;font-size:15px;font-weight:600;color:#F1F5F9;line-height:1.3;margin-bottom:2px;">Alguien de Mendoza compró hace 9 min</span>
-            <span style="display:block;font-size:12px;color:#D1D5DB;">✓ Verificado por Shopify</span>
+            <span style="display:block;font-size:12px;color:#F1F5F9;">✓ Verificado por Shopify</span>
           </div>
           <span style="flex-shrink:0;width:8px;height:8px;border-radius:50%;background:#4CAF50;display:inline-block;"></span>
         </div>
@@ -903,25 +892,25 @@
           <span style="display:block;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(232,160,32,.60);margin-bottom:20px;">Resumen de lo que recibís</span>
 
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:8px;">
-            <tr><td style="text-align:left;padding:6px 0;"><span style="font-size:16px;font-weight:300;color:#EAEAEA;">8 cursos completos</span></td><td style="text-align:right;"><span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $259</span></td></tr>
+            <tr><td style="text-align:left;padding:6px 0;"><span style="font-size:16px;font-weight:300;color:#FFFFFF;">8 cursos completos</span></td><td style="text-align:right;"><span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $259</span></td></tr>
           </table>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:22px;">
-            <tr><td style="text-align:left;padding:6px 0;"><span style="font-size:16px;font-weight:300;color:#EAEAEA;">10 regalos exclusivos</span></td><td style="text-align:right;"><span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#D1D5DB;text-decoration:line-through;">USD $191</span></td></tr>
+            <tr><td style="text-align:left;padding:6px 0;"><span style="font-size:16px;font-weight:300;color:#FFFFFF;">10 regalos exclusivos</span></td><td style="text-align:right;"><span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#F1F5F9;text-decoration:line-through;">USD $191</span></td></tr>
           </table>
 
           <div style="height:1px;background:rgba(232,160,32,.15);margin-bottom:22px;"></div>
 
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:26px;">
             <tr>
-              <td style="text-align:left;"><span style="font-size:17px;font-weight:600;color:#EAEAEA;">Valor total real</span></td>
-              <td style="text-align:right;"><span style="font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;color:#EAEAEA;text-decoration:line-through;line-height:1;">USD $450</span></td>
+              <td style="text-align:left;"><span style="font-size:17px;font-weight:600;color:#FFFFFF;">Valor total real</span></td>
+              <td style="text-align:right;"><span style="font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;color:#FFFFFF;text-decoration:line-through;line-height:1;">USD $450</span></td>
             </tr>
           </table>
 
           <span style="display:block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(232,160,32,.82);margin-bottom:9px;">🔥 Hoy lo llevás por</span>
           <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:92px;font-weight:900;color:#E8A020;line-height:1;margin-bottom:5px;">$20</span>
           <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:rgba(232,160,32,.55);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;">dólares</span>
-          <span style="display:block;font-size:15px;font-weight:300;color:#D1D5DB;margin-bottom:24px;">Pago único · Sin suscripción · Acceso de por vida</span>
+          <span style="display:block;font-size:15px;font-weight:300;color:#F1F5F9;margin-bottom:24px;">Pago único · Sin suscripción · Acceso de por vida</span>
 
           <div style="background:rgba(100,200,100,.08);border:1px solid rgba(100,200,100,.20);border-radius:12px;padding:15px 18px;margin-bottom:14px;">
             <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;text-transform:uppercase;color:rgba(100,210,100,.92);">✅ Ahorrás USD $430 · 95% de descuento</span>
@@ -933,7 +922,7 @@
 
           <div style="background:rgba(210,70,70,.08);border:1px solid rgba(210,70,70,.25);border-radius:12px;padding:15px 18px;">
             <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;color:rgba(220,80,80,.92);margin-bottom:5px;">⚠️ Los regalos se van al expirar el timer</span>
-            <span style="display:block;font-size:15px;font-weight:300;color:#D1D5DB;">Si cerrás esta página los perdés para siempre.</span>
+            <span style="display:block;font-size:15px;font-weight:300;color:#F1F5F9;">Si cerrás esta página los perdés para siempre.</span>
           </div>
         </div>
       </div>
@@ -942,7 +931,7 @@
         <div style="flex-shrink:0;width:60px;height:60px;border-radius:50%;background:rgba(232,160,32,.10);border:2px solid rgba(232,160,32,.28);display:flex;align-items:center;justify-content:center;font-size:28px;line-height:1;">🛡️</div>
         <div>
           <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;text-transform:uppercase;color:#F1F5F9;letter-spacing:.04em;margin-bottom:9px;">Garantía total de 7 días</span>
-          <span style="display:block;font-size:16px;font-weight:300;color:#EAEAEA;line-height:1.70;">Si en los próximos 7 días sentís que no era para vos, te devolvemos el 100% de tu dinero. Sin preguntas. El riesgo es nuestro, no tuyo.</span>
+          <span style="display:block;font-size:16px;font-weight:300;color:#FFFFFF;line-height:1.70;">Si en los próximos 7 días sentís que no era para vos, te devolvemos el 100% de tu dinero. Sin preguntas. El riesgo es nuestro, no tuyo.</span>
         </div>
       </div>
 
@@ -950,7 +939,7 @@
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="var c=document.getElementById('cart'); c.addLine(event); c.showModal();">
             🚀 &nbsp;Sí, quiero el Mega Pack por $20
           </button>
         </template>
@@ -961,7 +950,7 @@
         </div>
       </shopify-context>
 
-      <span style="display:block;font-size:17px;font-weight:400;color:#EAEAEA;text-align:center;line-height:1.6;margin-bottom:26px;">
+      <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;margin-bottom:26px;">
         🔒 Pago 100% seguro · Acceso inmediato · Garantía 7 días
       </span>
 
@@ -990,7 +979,7 @@
         <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:40px;font-weight:900;text-transform:uppercase;font-style:italic;color:#E8A020;line-height:.93;">quienes ya lo tienen</span>
       </div>
 
-      <p style="font-size:20px;font-weight:300;line-height:1.70;color:#D1D5DB;margin-bottom:28px;">
+      <p style="font-size:20px;font-weight:300;line-height:1.70;color:#F1F5F9;margin-bottom:28px;">
         Personas reales, negocios reales, resultados concretos.
       </p>
 
@@ -1020,14 +1009,14 @@
 
       <div style="background:rgba(232,160,32,.05);border:1px solid rgba(232,160,32,.18);border-radius:14px;padding:24px 22px;margin-bottom:26px;text-align:center;">
         <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;text-transform:uppercase;color:#E8A020;letter-spacing:.04em;margin-bottom:9px;">Si ellos pudieron, vos también podés.</span>
-        <span style="display:block;font-size:17px;font-weight:300;line-height:1.70;color:#EAEAEA;">El único requisito es querer empezar. El sistema hace el resto.</span>
+        <span style="display:block;font-size:17px;font-weight:300;line-height:1.70;color:#FFFFFF;">El único requisito es querer empezar. El sistema hace el resto.</span>
       </div>
 
       <!-- BOTÓN SHOPIFY WEB COMPONENTS -->
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; var c=document.getElementById('cart'); c.addLine(event); c.showModal();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
         </template>
@@ -1038,7 +1027,7 @@
         </div>
       </shopify-context>
 
-      <span style="display:block;font-size:17px;font-weight:400;color:#EAEAEA;text-align:center;line-height:1.6;">
+      <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;">
         🔒 Pago seguro · Acceso inmediato · 100% online
       </span>
 
@@ -1056,7 +1045,7 @@
         <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:40px;font-weight:900;text-transform:uppercase;font-style:italic;color:#E8A020;line-height:.93;">frecuentes</span>
       </div>
 
-      <p style="font-size:20px;font-weight:300;line-height:1.70;color:#D1D5DB;margin-bottom:36px;">
+      <p style="font-size:20px;font-weight:300;line-height:1.70;color:#F1F5F9;margin-bottom:36px;">
         Todo lo que necesitás saber antes de decidir.
       </p>
 
@@ -1070,7 +1059,7 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">Para nada. El Mega Pack está diseñado para empezar desde cero. Cada curso arranca desde lo más básico y avanza paso a paso, sin asumir conocimientos previos.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">Para nada. El Mega Pack está diseñado para empezar desde cero. Cada curso arranca desde lo más básico y avanza paso a paso, sin asumir conocimientos previos.</span>
         </div>
       </div>
 
@@ -1084,7 +1073,7 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">No. Todos los cursos usan interfaces visuales y lenguaje natural. Si podés escribir un mensaje de WhatsApp, podés usar estas herramientas.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">No. Todos los cursos usan interfaces visuales y lenguaje natural. Si podés escribir un mensaje de WhatsApp, podés usar estas herramientas.</span>
         </div>
       </div>
 
@@ -1098,7 +1087,7 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">De por vida. Un solo pago, acceso para siempre. Avanzás a tu ritmo sin fechas de vencimiento ni suscripciones.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">De por vida. Un solo pago, acceso para siempre. Avanzás a tu ritmo sin fechas de vencimiento ni suscripciones.</span>
         </div>
       </div>
 
@@ -1112,7 +1101,7 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">Inmediatamente. En menos de 5 minutos después del pago ya estás viendo el primer módulo. Sin esperas, sin aprobaciones manuales.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">Inmediatamente. En menos de 5 minutos después del pago ya estás viendo el primer módulo. Sin esperas, sin aprobaciones manuales.</span>
         </div>
       </div>
 
@@ -1126,7 +1115,7 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">Sí, 7 días de garantía total. Si no era lo que esperabas te devolvemos el 100% sin preguntas, sin formularios. El riesgo es completamente nuestro.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">Sí, 7 días de garantía total. Si no era lo que esperabas te devolvemos el 100% sin preguntas, sin formularios. El riesgo es completamente nuestro.</span>
         </div>
       </div>
 
@@ -1140,7 +1129,7 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">No. Es una oferta de lanzamiento con tiempo limitado. Una vez que expire, el pack vuelve a su precio normal. Si estás viendo este precio, es tu momento.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">No. Es una oferta de lanzamiento con tiempo limitado. Una vez que expire, el pack vuelve a su precio normal. Si estás viendo este precio, es tu momento.</span>
         </div>
       </div>
 
@@ -1154,7 +1143,7 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">Sí. Funciona en cualquier dispositivo — celular, tablet o computadora. Solo necesitás internet.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">Sí. Funciona en cualquier dispositivo — celular, tablet o computadora. Solo necesitás internet.</span>
         </div>
       </div>
 
@@ -1168,20 +1157,20 @@
           </td>
         </tr></table>
         <div class="mfa" style="padding-top:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:16px;">
-          <span style="display:block;font-size:17px;font-weight:300;color:#EAEAEA;line-height:1.70;">La diferencia es el enfoque. Otros te enseñan <i>qué es</i> la IA. Este pack te enseña <i>cómo aplicarla</i> en tu negocio real. Y si igual no te convence en 7 días, te devolvemos todo. No tenés nada que perder.</span>
+          <span style="display:block;font-size:17px;font-weight:300;color:#FFFFFF;line-height:1.70;">La diferencia es el enfoque. Otros te enseñan <i>qué es</i> la IA. Este pack te enseña <i>cómo aplicarla</i> en tu negocio real. Y si igual no te convence en 7 días, te devolvemos todo. No tenés nada que perder.</span>
         </div>
       </div>
 
       <div style="background:rgba(232,160,32,.05);border:1px solid rgba(232,160,32,.18);border-radius:14px;padding:24px 22px;margin-bottom:26px;text-align:center;">
         <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;text-transform:uppercase;color:#E8A020;margin-bottom:9px;">¿Todavía tenés dudas?</span>
-        <span style="display:block;font-size:17px;font-weight:300;line-height:1.70;color:#EAEAEA;">A $20 con garantía de 7 días, el riesgo es cero.<br>Si no te convence, te devolvemos todo.</span>
+        <span style="display:block;font-size:17px;font-weight:300;line-height:1.70;color:#FFFFFF;">A $20 con garantía de 7 días, el riesgo es cero.<br>Si no te convence, te devolvemos todo.</span>
       </div>
 
       <!-- BOTÓN SHOPIFY WEB COMPONENTS -->
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; var c=document.getElementById('cart'); c.addLine(event); c.showModal();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
         </template>
@@ -1192,105 +1181,19 @@
         </div>
       </shopify-context>
 
-      <span style="display:block;font-size:17px;font-weight:400;color:#EAEAEA;text-align:center;line-height:1.6;">
+      <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;">
         🔒 Pago seguro · Acceso inmediato · Garantía 7 días
       </span>
 
     </div>
   </section>
 
-  <!-- SECCIÓN 7: NUESTRA TIENDA COMPLETA -->
-  <section id="tienda" style="background:#0D0D10;padding:80px 22px;font-family:'Barlow',sans-serif;color:#F0EDE6;border-top:1px solid rgba(255,255,255,0.05);">
-    <div style="max-width:1100px;margin:0 auto;text-align:center;">
-      <span style="display:block;font-size:14px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#E8A020;margin-bottom:14px;">Catálogo Completo</span>
-      <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;margin-bottom:40px;line-height:1;">Todos nuestros <span style="font-style:italic;color:#E8A020;">productos IA</span></h2>
 
-      <!-- Grid Dinámico de Shopify -->
-      <shopify-list-context type="product" query="products" first="20">
-        <template>
-          <div style="background:#131318;border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:20px;text-align:left;display:flex;flex-direction:column;gap:15px;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-            <div style="border-radius:12px;overflow:hidden;background:#1A1A22;">
-              <shopify-media width="300" height="300" layout="constrained" query="product.selectedOrFirstAvailableVariant.image"></shopify-media>
-            </div>
-            <div>
-              <h3 style="font-size:18px;font-weight:600;margin:0 0 8px 0;color:#F1F5F9;min-height:54px;">
-                <shopify-data query="product.title"></shopify-data>
-              </h3>
-              <div style="font-size:20px;font-weight:700;color:#E8A020;margin-bottom:15px;">
-                <shopify-money query="product.selectedOrFirstAvailableVariant.price"></shopify-money>
-              </div>
-              <button 
-                onclick="document.getElementById('product-modal').showModal(); document.getElementById('modal-context').update(event);"
-                style="width:100%;padding:14px;background:rgba(255,255,255,0.05);color:white;border:1px solid rgba(255,255,255,0.1);border-radius:10px;cursor:pointer;font-weight:600;text-transform:uppercase;font-size:13px;transition:background 0.3s;"
-                onmouseover="this.style.background='rgba(255,255,255,0.1)'"
-                onmouseout="this.style.background='rgba(255,255,255,0.05)'"
-              >
-                Ver detalles
-              </button>
-            </div>
-          </div>
-        </template>
-        <div shopify-loading-placeholder style="color:#D1D5DB;padding:40px;">Buscando productos en la tienda...</div>
-      </shopify-list-context>
-    </div>
-  </section>
-
-  <!-- MODAL DE PRODUCTO (ESTILO PREMIUM) -->
-  <dialog id="product-modal" style="padding:0;border:none;border-radius:20px;max-width:900px;width:95%;background:#131318;color:white;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);">
-    <shopify-context id="modal-context" type="product" wait-for-update>
-      <template>
-        <div style="display:flex;flex-wrap:wrap;">
-          <!-- Imagen -->
-          <div style="flex:1;min-width:300px;background:#1A1A22;">
-            <shopify-media width="450" height="450" layout="constrained" query="product.selectedOrFirstAvailableVariant.image"></shopify-media>
-          </div>
-          <!-- Info -->
-          <div style="flex:1;min-width:300px;padding:40px;position:relative;">
-            <button onclick="document.getElementById('product-modal').close()" style="position:absolute;top:20px;right:20px;background:none;border:none;color:white;font-size:24px;cursor:pointer;">✕</button>
-            <span style="display:block;font-size:12px;color:#E8A020;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;"><shopify-data query="product.vendor"></shopify-data></span>
-            <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;margin-bottom:10px;"><shopify-data query="product.title"></shopify-data></h2>
-            <div style="font-size:28px;font-weight:700;color:#E8A020;margin-bottom:20px;">
-              <shopify-money query="product.selectedOrFirstAvailableVariant.price"></shopify-money>
-            </div>
-            
-            <div style="margin-bottom:25px;color:#D1D5DB;line-height:1.6;font-size:15px;">
-              <shopify-data query="product.descriptionHtml"></shopify-data>
-            </div>
-
-            <shopify-variant-selector style="margin-bottom:25px;"></shopify-variant-selector>
-
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-              <button 
-                onclick="document.getElementById('cart').addLine(event).showModal();"
-                style="padding:18px;background:white;color:black;border:none;border-radius:12px;font-weight:700;text-transform:uppercase;cursor:pointer;"
-              >
-                🛒 Al Carrito
-              </button>
-              <button 
-                onclick="document.querySelector('shopify-store').buyNow(event)"
-                style="padding:18px;background:#E8A020;color:white;border:none;border-radius:12px;font-weight:700;text-transform:uppercase;cursor:pointer;"
-              >
-                Comprar ya
-              </button>
-            </div>
-          </div>
-        </div>
-      </template>
-      <div shopify-loading-placeholder style="padding:100px;text-align:center;">Cargando info del producto...</div>
-    </shopify-context>
-  </dialog>
 
   <!-- COMPONENTE DE CARRITO -->
   <shopify-cart id="cart"></shopify-cart>
 
   <style>
-    /* Estilos para el grid de la tienda */
-    shopify-list-context {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 20px;
-    }
     /* Personalización del Carrito (CSS Parts) */
     shopify-cart::part(dialog) {
       background: #131318;
@@ -1305,8 +1208,6 @@
       text-transform: uppercase;
       border-radius: 12px;
     }
-    shopify-variant-selector::part(label) { color: #EAEAEA; font-weight: 600; margin-bottom: 5px; }
-    shopify-variant-selector::part(select) { background: #1A1A22; color: white; border: 1px solid rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; width: 100%; }
   </style>
 
 </shopify-store>
