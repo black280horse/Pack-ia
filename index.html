@@ -196,7 +196,7 @@
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
         </template>
@@ -939,7 +939,7 @@
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Sí, quiero el Mega Pack por $20
           </button>
         </template>
@@ -1016,7 +1016,7 @@
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
         </template>
@@ -1170,7 +1170,7 @@
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
       <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
         <template>
-          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.querySelector('shopify-store').buyNow(event)">
+          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
         </template>
@@ -1193,6 +1193,12 @@
 
 
 
+
+  <!-- FORMULARIO INVISIBLE PARA CARRITO CLÁSICO DE SHOPIFY -->
+  <form id="add-to-cart-form" action="https://glonex100k.myshopify.com/cart/add" method="post" style="display:none;">
+    <input type="hidden" name="id" value="46839699341451">
+    <input type="hidden" name="return_to" value="/cart">
+  </form>
 
 </shopify-store>
 
