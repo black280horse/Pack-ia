@@ -5,12 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Mega Pack de IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,900;1,900&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Componentes de Shopify Web Components -->
   <script type="module" src="https://cdn.shopify.com/storefront/web-components.js"></script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,900;1,900&family=Barlow:wght@300;400;600&display=swap');
+    
 
     *, *::before, *::after {
       box-sizing: border-box;
@@ -100,7 +103,10 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window,document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init','1365027505007524');
+      // Inicializamos el pixel con el nuevo ID
+      fbq('init','1381808020420322');
+      
+      // Eventos estándar para trackear la máxima información en la landing
       fbq('track','PageView');
       fbq('track','ViewContent',{
         content_name:'Mega Pack de IA',
@@ -110,13 +116,13 @@
       });
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1365027505007524&ev=PageView&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1381808020420322&ev=PageView&noscript=1"/>
   </noscript>
 </head>
 <body>
 
 <shopify-store 
-  store-domain="glonex100k.myshopify.com" 
+  store-domain="shop.megapack-cursos.online" 
   public-access-token="d9fd1a0f1776310a68180036c5f12900" 
   country="AR" 
   language="es"
@@ -145,7 +151,7 @@
       </p>
 
       <div class="sq" style="border-radius:14px;margin-bottom:26px;border:1px solid rgba(232,160,32,.20);">
-        <img src="https://i.imgur.com/aurZVPL.png" alt="Mega Pack de IA">
+        <img decoding="async" src="https://i.imgur.com/aurZVPL.png" alt="Mega Pack de IA">
       </div>
 
       <div style="background:rgba(232,160,32,.06);border:1px solid rgba(232,160,32,.22);border-radius:13px;padding:18px 18px;margin-bottom:26px;text-align:left;display:flex;align-items:flex-start;gap:13px;">
@@ -199,18 +205,9 @@
 
       <!-- BOTÓN SHOPIFY WEB COMPONENTS -->
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
-      <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
-        <template>
-          <button class="cta-btn" onclick="document.getElementById('add-to-cart-form').submit();">
+      <button class="cta-btn" onclick="document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
-        </template>
-        <div shopify-loading-placeholder>
-          <button class="cta-btn" disabled>
-            🚀 &nbsp;Cargando...
-          </button>
-        </div>
-      </shopify-context>
 
       <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;margin-bottom:26px;">
         🔒 Pago seguro · Acceso inmediato · 100% online
@@ -517,7 +514,7 @@
       <p style="font-size:17px;font-weight:300;line-height:1.80;color:#FFFFFF;margin-bottom:32px;">Todo junto, en un solo pago, con acceso inmediato.</p>
 
       <div class="sq" style="border-radius:16px;margin-bottom:36px;border:1px solid rgba(232,160,32,.22);">
-        <img src="https://i.imgur.com/aurZVPL.png" alt="Mega Pack de IA">
+        <img decoding="async" src="https://i.imgur.com/aurZVPL.png" alt="Mega Pack de IA">
       </div>
 
       <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;letter-spacing:.10em;color:#E8A020;margin-bottom:24px;">📦 Los 8 cursos incluidos</span>
@@ -525,7 +522,7 @@
       <!-- CURSOS -->
       <!-- 1 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:16px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/liiB1f0.png" alt="Golden IA"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/liiB1f0.png" alt="Golden IA"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 1</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -542,7 +539,7 @@
 
       <!-- 2 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:16px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/olpQt3M.png" alt="Vende Más con IA"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/olpQt3M.png" alt="Vende Más con IA"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 2</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -559,7 +556,7 @@
 
       <!-- 3 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:16px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/6Xaa7ZL.png" alt="Anuncios Virales"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/6Xaa7ZL.png" alt="Anuncios Virales"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 3</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -576,7 +573,7 @@
 
       <!-- 4 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:16px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/T9q2c53.png" alt="N8N Viral Machine"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/T9q2c53.png" alt="N8N Viral Machine"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 4</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -593,7 +590,7 @@
 
       <!-- 5 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:16px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/29G106A.png" alt="Protocolo IA"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/29G106A.png" alt="Protocolo IA"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 5</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -610,7 +607,7 @@
 
       <!-- 6 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:16px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/K6byrNbg.png" alt="IA Box Pack"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/K6byrNbg.png" alt="IA Box Pack"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 6</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -627,7 +624,7 @@
 
       <!-- 7 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:16px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/dhnf3pc.png" alt="IA Master Fast"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/dhnf3pc.png" alt="IA Master Fast"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 7</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -644,7 +641,7 @@
 
       <!-- 8 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:40px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/VR4LH1p.png" alt="App con IA en 7 días"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/VR4LH1p.png" alt="App con IA en 7 días"></div>
         <div style="padding:22px 20px;">
           <span style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#E8A020;background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.22);border-radius:999px;padding:4px 14px;margin-bottom:10px;">Curso 8</span>
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
@@ -669,7 +666,7 @@
 
       <!-- R1 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/ox6Tzj9.png" alt="Curso Excel"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/ox6Tzj9.png" alt="Curso Excel"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -686,7 +683,7 @@
 
       <!-- R2 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/wnfbSOX.png" alt="Influencer IA"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/wnfbSOX.png" alt="Influencer IA"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -703,7 +700,7 @@
 
       <!-- R3 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/vKanHUB.png" alt="TikTok Virales"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/vKanHUB.png" alt="TikTok Virales"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -720,7 +717,7 @@
 
       <!-- R4 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/1kYiPNY.png" alt="Plantillas Canva"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/1kYiPNY.png" alt="Plantillas Canva"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -737,7 +734,7 @@
 
       <!-- R5 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/GfUKyGm.png" alt="Hack IA Gratis"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/GfUKyGm.png" alt="Hack IA Gratis"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -754,7 +751,7 @@
 
       <!-- R6 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/SEBMohv.png" alt="50 Hooks"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/SEBMohv.png" alt="50 Hooks"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -771,7 +768,7 @@
 
       <!-- R7 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/hpIwq5C.png" alt="Prompts Flow"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/hpIwq5C.png" alt="Prompts Flow"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -788,7 +785,7 @@
 
       <!-- R8 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/zG17Ifv.png" alt="Cierre de ventas WhatsApp"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/zG17Ifv.png" alt="Cierre de ventas WhatsApp"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -805,7 +802,7 @@
 
       <!-- R9 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:14px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/NdabsaJ.png" alt="Monetizar IA hoy"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/NdabsaJ.png" alt="Monetizar IA hoy"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -822,7 +819,7 @@
 
       <!-- R10 -->
       <div style="background:#111116;border:1px solid rgba(255,255,255,.06);border-radius:14px;overflow:hidden;margin-bottom:44px;text-align:left;">
-        <div class="sq"><img src="https://i.imgur.com/YTmHbcE.png" alt="Personajes Animados"></div>
+        <div class="sq"><img loading="lazy" decoding="async" src="https://i.imgur.com/YTmHbcE.png" alt="Personajes Animados"></div>
         <div style="padding:20px 20px;">
           <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr>
             <td style="vertical-align:top;">
@@ -942,18 +939,9 @@
 
       <!-- BOTÓN SHOPIFY WEB COMPONENTS -->
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
-      <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
-        <template>
-          <button class="cta-btn" onclick="document.getElementById('add-to-cart-form').submit();">
+      <button class="cta-btn" onclick="document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Sí, quiero el Mega Pack por $20
           </button>
-        </template>
-        <div shopify-loading-placeholder>
-          <button class="cta-btn" disabled>
-            🚀 &nbsp;Cargando...
-          </button>
-        </div>
-      </shopify-context>
 
       <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;margin-bottom:26px;">
         🔒 Pago 100% seguro · Acceso inmediato · Garantía 7 días
@@ -994,22 +982,22 @@
       </div>
 
       <div style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;margin-bottom:12px;">
-        <img src="https://i.imgur.com/4VsBTWu.png" alt="Testimonio 1" style="display:block;width:100%;height:auto;">
+        <img loading="lazy" decoding="async" src="https://i.imgur.com/4VsBTWu.png" alt="Testimonio 1" style="display:block;width:100%;height:auto;">
       </div>
       <div style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;margin-bottom:12px;">
-        <img src="https://i.imgur.com/GkHSvzd.png" alt="Testimonio 2" style="display:block;width:100%;height:auto;">
+        <img loading="lazy" decoding="async" src="https://i.imgur.com/GkHSvzd.png" alt="Testimonio 2" style="display:block;width:100%;height:auto;">
       </div>
       <div style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;margin-bottom:12px;">
-        <img src="https://i.imgur.com/Jbz6Wat.png" alt="Testimonio 3" style="display:block;width:100%;height:auto;">
+        <img loading="lazy" decoding="async" src="https://i.imgur.com/Jbz6Wat.png" alt="Testimonio 3" style="display:block;width:100%;height:auto;">
       </div>
       <div style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;margin-bottom:12px;">
-        <img src="https://i.imgur.com/xegSq65.png" alt="Testimonio 4" style="display:block;width:100%;height:auto;">
+        <img loading="lazy" decoding="async" src="https://i.imgur.com/xegSq65.png" alt="Testimonio 4" style="display:block;width:100%;height:auto;">
       </div>
       <div style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;margin-bottom:12px;">
-        <img src="https://i.imgur.com/KFoiVBc.png" alt="Testimonio 5" style="display:block;width:100%;height:auto;">
+        <img loading="lazy" decoding="async" src="https://i.imgur.com/KFoiVBc.png" alt="Testimonio 5" style="display:block;width:100%;height:auto;">
       </div>
       <div style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;margin-bottom:36px;">
-        <img src="https://i.imgur.com/nNrigGf.png" alt="Testimonio 6" style="display:block;width:100%;height:auto;">
+        <img loading="lazy" decoding="async" src="https://i.imgur.com/nNrigGf.png" alt="Testimonio 6" style="display:block;width:100%;height:auto;">
       </div>
 
       <div style="background:rgba(232,160,32,.05);border:1px solid rgba(232,160,32,.18);border-radius:14px;padding:24px 22px;margin-bottom:26px;text-align:center;">
@@ -1019,18 +1007,9 @@
 
       <!-- BOTÓN SHOPIFY WEB COMPONENTS -->
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
-      <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
-        <template>
-          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.getElementById('add-to-cart-form').submit();">
+      <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
-        </template>
-        <div shopify-loading-placeholder>
-          <button class="cta-btn" disabled>
-            🚀 &nbsp;Cargando...
-          </button>
-        </div>
-      </shopify-context>
 
       <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;">
         🔒 Pago seguro · Acceso inmediato · 100% online
@@ -1173,18 +1152,9 @@
 
       <!-- BOTÓN SHOPIFY WEB COMPONENTS -->
       <!-- Reemplaza "mega-pack-ia" con el 'handle' real del producto en Shopify -->
-      <shopify-context type="product" handle="pack-ia-8-cursos-10-regalos">
-        <template>
-          <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.getElementById('add-to-cart-form').submit();">
+      <button class="cta-btn" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{content_name:'Mega Pack de IA',currency:'USD',value:20});}; document.getElementById('add-to-cart-form').submit();">
             🚀 &nbsp;Quiero mi Mega Pack de IA
           </button>
-        </template>
-        <div shopify-loading-placeholder>
-          <button class="cta-btn" disabled>
-            🚀 &nbsp;Cargando...
-          </button>
-        </div>
-      </shopify-context>
 
       <span style="display:block;font-size:17px;font-weight:400;color:#FFFFFF;text-align:center;line-height:1.6;">
         🔒 Pago seguro · Acceso inmediato · Garantía 7 días
@@ -1199,9 +1169,9 @@
 
 
 
-  <!-- FORMULARIO INVISIBLE PARA CARRITO CLÁSICO DE SHOPIFY -->
-  <form id="add-to-cart-form" action="https://glonex100k.myshopify.com/cart/add" method="post" style="display:none;">
+  <form id="add-to-cart-form" action="https://shop.megapack-cursos.online/cart/add" method="post" style="display:none;">
     <input type="hidden" name="id" value="46839699341451">
+    <input type="hidden" name="quantity" value="1">
     <input type="hidden" name="return_to" value="/cart">
   </form>
 
